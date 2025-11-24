@@ -147,7 +147,7 @@ function App() {
                         <img src={x} alt="x" className="w-7 sm:w-8 h-auto icon x" />
                     </a>
                 </div>
-                <a href="/Curriculum_spen.pdf" download="CV" className={"flex flex-row mt-16 gap-2"}>
+                <a href="/Curriculum_spen.pdf" download="DanielHerreraUrbano_CV" className={"flex flex-row mt-16 gap-2"}>
                     <LuDownload className={"size-6 mt-[1px] text-[var(--blue)]"}/>
                     <p id="cv" className={"text-md sm:text-lg text-center font-helios font-light text-[var(--blue)] underline"}>
                         download my CV!
@@ -156,7 +156,7 @@ function App() {
                 <div className={"flex flex-row mt-2 gap-2"}>
                     <MdOutlineEmail className={"size-6 mt-[2px] text-[var(--blue)]"}/>
                     <p className={"text-md sm:text-lg text-center font-helios font-light text-[var(--blue)] underline"}>
-                        danielherurb@gmail.com
+                        <a href={"mailto:danielherurb@gmail.com"}>danielherurb@gmail.com</a>
                     </p>
                 </div>
             </div>
@@ -193,8 +193,8 @@ function App() {
                     <p className={"mt-2 text-lg sm:text-2xl text-center font-helios font-light text-white"}> Daniel Herrera Urbano</p>
                     <p className={"text-sm sm:text-lg text-center font-helios font-light text-white"}> (the CSS/mockups guy, according to some)</p>
                     <div className={"flex flex-row items-center gap-2 mt-6"}>
-                        <FaCircle className={"text-green-600 text-sm sm:text-md"}/>
-                        <p className={"text-sm sm:text-lg"}>I am <u>currently available</u>, contact me!</p>
+                        <FaCircle className={"text-green-600 text-sm"}/>
+                        <p className={"text-sm sm:text-md"}>I am <b>currently available</b>, contact me!</p>
                     </div>
                     <div className={"flex flex-row align gap-6 sm:gap-5 mt-2 sm:mt-3"}>
                         <a href={"https://www.linkedin.com/in/daniel-herrera-urbano-a1170428b"} target="_blank" rel="noopener noreferrer">
