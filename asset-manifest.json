@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c840b42e.css",
+    "main.js": "/static/js/main.c1f6a7eb.js",
+    "static/media/dani.png": "/static/media/dani.9b600c059d7e35ad97d0.png",
+    "static/media/seveneat.png": "/static/media/seveneat.f82d529d2155b084348b.png",
+    "static/media/7.png": "/static/media/7.c6a76b081900e7712703.png",
+    "static/media/portfolio.png": "/static/media/portfolio.d46d152ec2792d288498.png",
+    "static/media/1.png": "/static/media/1.752557321be3ae55f2dd.png",
+    "static/media/x_white.png": "/static/media/x_white.ab1bf298218684bb5b1e.png",
+    "static/media/3.png": "/static/media/3.4a71b4f710e1861c30bb.png",
+    "static/media/8.png": "/static/media/8.b1684a9296e147ee12b6.png",
+    "static/media/vrp.png": "/static/media/vrp.9ce069940f5820e55a38.png",
+    "static/media/cat.png": "/static/media/cat.c4c4f64179f6927125dd.png",
+    "static/media/6.png": "/static/media/6.1d7a68aa23f6e811cb95.png",
+    "static/media/gameoflife.png": "/static/media/gameoflife.06d9a1889c5ac11fe8d3.png",
+    "static/media/9.png": "/static/media/9.a9e90b592103cba7ab68.png",
+    "static/media/heliosext.otf": "/static/media/heliosext.6ba9422dd903bb485a70.otf",
+    "static/media/x.png": "/static/media/x.28edbcd4aab9591322dd.png",
+    "static/media/github.png": "/static/media/github.0f0a17a67dc96ffb7f4b.png",
+    "static/media/github_white.png": "/static/media/github_white.d278b77f6682178e8b92.png",
+    "static/media/2.png": "/static/media/2.63f6560e71a917e6980b.png",
+    "static/media/5.png": "/static/media/5.266bd9fb2663dcc057b4.png",
+    "static/media/logo.svg": "/static/media/logo.9ce24c68def4d86fc1acb0e65f20d147.svg",
+    "index.html": "/index.html",
+    "main.c840b42e.css.map": "/static/css/main.c840b42e.css.map",
+    "main.c1f6a7eb.js.map": "/static/js/main.c1f6a7eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c840b42e.css",
+    "static/js/main.c1f6a7eb.js"
+  ]
+}
