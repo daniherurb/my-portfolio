@@ -147,7 +147,7 @@ function App() {
                         <img src={x} alt="x" className="w-7 sm:w-8 h-auto icon x" />
                     </a>
                 </div>
-                <a href="/Curriculum_spen.pdf" download="DanielHerreraUrbano_CV" className={"flex flex-row mt-16 gap-2"}>
+                <a href="/daniel_herreraurbano_cv.pdf" download="DanielHerreraUrbano_CV" className={"flex flex-row mt-16 gap-2"}>
                     <LuDownload className={"size-6 mt-[1px] text-[var(--blue)]"}/>
                     <p id="cv" className={"text-md sm:text-lg text-center font-helios font-light text-[var(--blue)] underline"}>
                         download my CV!
