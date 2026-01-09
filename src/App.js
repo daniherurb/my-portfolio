@@ -45,7 +45,6 @@ function App() {
         },
         {
             name: "Daniela's Portfolio",
-            link: "https://danielarg.site",
             repo: "https://github.com/danielarg28/danielarg28.github.io",
             date: 'January 2025',
             description: 'Personal portfolio web for my best friend :)',
