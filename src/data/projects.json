@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Seveneat Landing Page",
+    "link": "https://www.seveneat.com",
+    "repo": "https://github.com/daniherurb/seveneat-landing-page",
+    "date": "September 2025",
+    "description": "Landing page for Seveneat, an intelligent meal planning app.",
+    "tech": "React, Tailwind CSS",
+    "preview": "seveneat.png"
+  },
+  {
+    "name": "Personal Portfolio",
+    "repo": "https://github.com/daniherurb",
+    "date": "November 2025",
+    "description": "My personal portfolio web, containing my contact, personal projects and tech stack I use.",
+    "tech": "React, Tailwind CSS",
+    "preview": "portfolio.png"
+  },
+  {
+    "name": "Game of Life Web",
+    "link": "https://daniherurb.github.io/game-of-life-web",
+    "repo": "https://github.com/daniherurb/game-of-life-web",
+    "date": "July 2025",
+    "description": "Implementation of Conway's Game of Life.",
+    "tech": "HTML, JS & CSS",
+    "preview": "gameoflife.png"
+  },
+  {
+    "name": "Daniela's Portfolio",
+    "repo": "https://github.com/danielarg28/danielarg28.github.io",
+    "date": "January 2025",
+    "description": "Personal portfolio web for my best friend :)",
+    "tech": "HTML, JS & CSS",
+    "preview": "dani.png"
+  },
+  {
+    "name": "VRP Project",
+    "repo": "https://github.com/daniherurb/clustered-vrp-ga-project",
+    "date": "May 2025",
+    "description": "My final AI project, solved using clustering and genetic algorithms.",
+    "tech": "Python",
+    "preview": "vrp.png"
+  }
+]
