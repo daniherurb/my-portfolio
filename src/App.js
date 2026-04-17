@@ -105,9 +105,9 @@ function App() {
             <div className={"w-full flex flex-col items-center mt-24"}>
                 <p className={"w-[85%] mt-2 mb-4 text-xl sm:text-2xl font-helios font-bold text-[var(--blue)] section-title"} id="aboutme">about me</p>
                 <p className={"w-[85%] text-md sm:text-lg font-helios text-justify text-[var(--blue)]"}>
-                    I’m Daniel, a Software Engineering student passionate about web development, especially frontend
-                    engineering and UI/UX design. I also have experience
-                    developing APIs and working with backend systems.<br/>
+                    I’m Daniel, a Software Engineering student passionate about <b>web development</b>, especially <b>frontend
+                    engineering</b> and <b>UI/UX design</b>. I also have experience
+                    developing <b>APIs</b> and working with <b>backend</b> systems.<br/>
                     <br/>
                     My interest in frontend started early, back in high school when I built my first static HTML pages.
                     Since then, I’ve become convinced that visual quality, usability, and accessibility are essential to

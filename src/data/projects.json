@@ -1,5 +1,23 @@
 [
   {
+    "name": "weaver",
+    "date": "January 2026",
+    "description": "My final degree project: A Kanban app integrated with GitHub to optimize Scrum development",
+    "tech": "Spring Boot (Kotlin), React, PostgreSQL, Docker, DaisyUI",
+    "preview": "weaver.png",
+    "almostMidway": true
+  },
+  {
+    "name": "DondeSiempre",
+    "repo": "https://github.com/ispp-knot",
+    "date": "January - May 2026",
+    "description": "A marketplace to promote local stores",
+    "tech": "Spring Boot (Java), Next.js, PostgreSQL",
+    "preview": "dondesiempre.png",
+    "role": "Mostly worked on the creative side, designing and implementing the UI/UX, crafting visual assets for weekly presentations, and shaping the brand identity.",
+    "almostDone": true
+  },
+  {
     "name": "Seveneat Landing Page",
     "link": "https://www.seveneat.com",
     "repo": "https://github.com/daniherurb/seveneat-landing-page",
