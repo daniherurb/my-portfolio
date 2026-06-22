@@ -64,9 +64,9 @@ function App() {
                         <img src={logo} alt="logo" className="h-20 w-20 animate-slide_in_right"/>
                     </div>
                     <div className={"text-sm flex flex-row sm:gap-10 gap-4 font-helios sm:text-xl text-[var(--blue)]"}>
-                        <a href={'#aboutme'} className={"bio menu-option"}>about.</a>
-                        <a href={'#projects'} className={"projects menu-option"}>projects.</a>
-                        <a href={'#stack'} className={"stack menu-option"}>stack.</a>
+                        <button onClick={() => document.getElementById('aboutme').scrollIntoView({ behavior: 'smooth' })} className={"bio menu-option"}>about.</button>
+                        <button onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })} className={"projects menu-option"}>projects.</button>
+                        <button onClick={() => document.getElementById('stack').scrollIntoView({ behavior: 'smooth' })} className={"stack menu-option"}>stack.</button>
                     </div>
                 </div>
             </div>

@@ -39,7 +39,7 @@
   {
     "name": "Blitzdrop",
     "repo": "https://github.com/daniherurb",
-    "date": "November 2025",
+    "date": "May 2025",
     "description": "A video game assets API, integrated with third party APIs.",
     "tech": "Elysia.js, Bun, MongoDB, React, Tailwind CSS",
     "preview": "blitzdrop.png"
