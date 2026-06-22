@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1107ecca.css",
-    "main.js": "/static/js/main.1ec0584b.js",
+    "main.js": "/static/js/main.b3a02022.js",
     "static/media/dani.png": "/static/media/dani.9b600c059d7e35ad97d0.png",
     "static/media/seveneat.png": "/static/media/seveneat.920d68c662b625f04218.png",
     "static/media/7.png": "/static/media/7.c6a76b081900e7712703.png",
@@ -27,10 +27,10 @@
     "static/media/logo.svg": "/static/media/logo.9ce24c68def4d86fc1acb0e65f20d147.svg",
     "index.html": "/index.html",
     "main.1107ecca.css.map": "/static/css/main.1107ecca.css.map",
-    "main.1ec0584b.js.map": "/static/js/main.1ec0584b.js.map"
+    "main.b3a02022.js.map": "/static/js/main.b3a02022.js.map"
   },
   "entrypoints": [
     "static/css/main.1107ecca.css",
-    "static/js/main.1ec0584b.js"
+    "static/js/main.b3a02022.js"
   ]
 }
