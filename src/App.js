@@ -9,36 +9,33 @@ import linkedin_white from './static/images/linkedin_white.png'
 import x_white from './static/images/x_white.png'
 import { LuDownload } from "react-icons/lu";
 import { MdOutlineEmail } from "react-icons/md";
-import { useRef, useEffect } from "react";
+import {useState, useEffect} from "react";
 import { FaCircle } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import projects from './data/projects.json';
-import ProjectCard from './projectCard';
-
+import FeaturedProject from './featuredProject';
+import MusicCard from './musicCard';
 
 function App() {
-    const projectsContainer = useRef(null);
+    const [songs, setSongs] = useState([]);
 
     useEffect(() => {
-        const container = projectsContainer.current;
-        if (!container) return;
+        const fetchSongs = () =>
+            fetch("https://music-api-omega-eosin.vercel.app/songs")
+                .then(res => res.json())
+                .then(data => setSongs(data.slice(0, 6)));
 
-        const handleWheel = (e) => {
-            e.preventDefault();
-            const horizontalScroll = e.deltaX !== 0 ? e.deltaX : e.deltaY * 0.7;
-            container.scrollLeft += horizontalScroll*0.7;
-        };
-
-        container.addEventListener('wheel', handleWheel, { passive: false });
-
-        return () => {
-            container.removeEventListener('wheel', handleWheel);
-        };
+        fetchSongs().catch(() =>
+            setTimeout(() => fetchSongs().catch(() => {}), 2000)
+        );
     }, []);
 
     const renderProjects = () => {
-        return projects && projects.map(project => (
-            <ProjectCard key={`${project.name}-${project.date}`} project={project} />
-        ));
+        return projects
+            .filter(p => p.featured)
+            .map(project => (
+                <FeaturedProject key={`${project.name}-${project.date}`} project={project} />
+            ));
     }
 
     const renderTechStack = () => {
@@ -104,7 +101,7 @@ function App() {
             </div>
             <div className={"w-full flex flex-col items-center mt-24"}>
                 <p className={"w-[85%] mt-2 mb-4 text-xl sm:text-2xl font-helios font-bold text-[var(--blue)] section-title"} id="aboutme">about me</p>
-                <p className={"w-[85%] text-md sm:text-lg font-helios text-justify text-[var(--blue)]"}>
+                <p className={"w-[85%] text-sm sm:text-base font-helios text-justify text-[var(--blue)]"}>
                     I’m Daniel, a Software Engineering student passionate about <b>web development</b>, especially <b>frontend
                     engineering</b> and <b>UI/UX design</b>. I also have experience
                     developing <b>APIs</b> and working with <b>backend</b> systems.<br/>
@@ -116,11 +113,15 @@ function App() {
                 </p>
             </div>
             <div className={"w-full flex flex-col items-center mt-16 mb-10"}>
-                <p className={"w-[85%] text-xl sm:text-2xl font-helios font-bold text-[var(--blue)] section-title"} id="projects">projects</p>
-                <div
-                    ref={projectsContainer}
-                    className={"w-[85%] overflow-x-scroll overflow-y-hidden h-fit flex flex-row items-center gap-6 sm:gap-5 pr-2 projects pb-2 pt-4"}
-                >
+                <div className={"w-[85%] text-xl sm:text-2xl font-helios font-bold text-[var(--blue)] section-title flex flex-row justify-between"} id="projects">
+                    <p>projects</p>
+                    <p>
+                        <Link to="/projects" className={"font-helios text-sm sm:text-md text-[var(--blue)] underline menu-option self-start"}>
+                            see all projects
+                        </Link>
+                    </p>
+                </div>
+                <div className={"w-[85%] h-fit flex flex-col lg:flex-row items-stretch gap-12 lg:gap-5 pb-2 pt-4"}>
                     {renderProjects()}
                 </div>
             </div>
@@ -130,11 +131,22 @@ function App() {
                     {renderTechStack()}
                 </div>
             </div>
-            <div className={"w-full h-64 flex flex-col items-center mt-12 justify-between p-3 pb-2 bg-[var(--blue)] font-helios text-white"}>
+            {songs.length > 0 && <div className={"w-full flex flex-col items-center mt-12 mb-10"}>
+                <p className={"w-[85%] mt-2 mb-3 text-xl sm:text-2xl font-helios font-bold text-[var(--blue)] section-title"} id="music">music</p>
+                <p className={"w-[85%] text-sm sm:text-base font-helios font-light text-[var(--blue)] mb-6"}>
+                    I built a small API with <b>Hono</b> to integrate with <b>Spotify</b> — partly as a fun side project, partly because I'm a huge music fan and believe what we listen to says a lot about who we are. Here are 5 songs I've had on repeat lately (or just love deeply).
+                </p>
+                <div className={"w-[85%] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6"}>
+                    {songs.map(song => (
+                        <MusicCard key={song._id} song={song} />
+                    ))}
+                </div>
+            </div>}
+            <div className={"w-full h-52 flex flex-col items-center mt-12 justify-between p-3 pb-2 bg-[var(--blue)] font-helios text-white"}>
                 <div className={"flex flex-col items-center mt-2"}>
                     <p className={"mt-2 text-lg sm:text-2xl text-center font-helios font-light text-white"}> Daniel Herrera Urbano</p>
                     <p className={"text-sm sm:text-lg text-center font-helios font-light text-white"}> (the CSS/mockups guy, according to some)</p>
-                    <div className={"flex flex-row items-center gap-2 mt-6"}>
+                    <div className={"flex flex-row items-center gap-2 mt-4"}>
                         <FaCircle className={"text-green-600 text-sm"}/>
                         <p className={"text-sm sm:text-md"}>I am <b>currently available</b>, contact me!</p>
                     </div>

@@ -1,30 +1,48 @@
 [
   {
     "name": "weaver",
+    "featured": true,
     "date": "January 2026",
-    "description": "My final degree project: A Kanban app integrated with GitHub to optimize Scrum development",
+    "description": "My final degree project: A Scrumban app integrated with GitHub to optimize development and foster team collaboration.",
     "tech": "Spring Boot (Kotlin), React, PostgreSQL, Docker, DaisyUI",
+    "repo": "https://github.com/daniherurb/weaver",
     "preview": "weaver.png",
-    "almostMidway": true
+    "logo": "weaver.png",
+    "color": "#7d1542",
+    "textColor": "#7d1542"
   },
   {
     "name": "DondeSiempre",
+    "featured": true,
     "repo": "https://github.com/ispp-knot",
     "date": "January - May 2026",
     "description": "A marketplace to promote local stores",
     "tech": "Spring Boot (Java), Next.js, PostgreSQL",
     "preview": "dondesiempre.png",
     "role": "Mostly worked on the creative side, designing and implementing the UI/UX, crafting visual assets for weekly presentations, and shaping the brand identity.",
-    "almostDone": true
+    "logo": "dondesiempre.png",
+    "color": "#3a8b7f",
+    "textColor": "#e26137"
   },
   {
     "name": "Seveneat Landing Page",
+    "featured": true,
     "link": "https://www.seveneat.com",
     "repo": "https://github.com/daniherurb/seveneat-landing-page",
     "date": "September 2025",
     "description": "Landing page for Seveneat, an intelligent meal planning app.",
     "tech": "React, Tailwind CSS",
-    "preview": "seveneat.png"
+    "preview": "seveneat.png",
+    "logo": "seveneat.png",
+    "color": "#f6472e"
+  },
+  {
+    "name": "Blitzdrop",
+    "repo": "https://github.com/daniherurb",
+    "date": "November 2025",
+    "description": "A video game assets API, integrated with third party APIs.",
+    "tech": "Elysia.js, Bun, MongoDB, React, Tailwind CSS",
+    "preview": "blitzdrop.png"
   },
   {
     "name": "Personal Portfolio",
